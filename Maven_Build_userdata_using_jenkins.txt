@@ -1,3 +1,4 @@
+#use this for cloning & build through jenkins
 #!/bin/bash
 sudo su
 yum update -y
