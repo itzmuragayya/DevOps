@@ -1,10 +1,8 @@
-# Pull base image 
-From tomcat:latest 
+# pull the htppd docker image
+FROM httpd:latest
 
-# Maintainer name 
-MAINTAINER "vinosmpal@gmail.com" 
+# person who is maintinag the docker file
+MAINTAINER "vnom1985@gmail.com"
 
-# copying the the  waebapp war file from the source directory to destincation tomcat Container directory
-COPY webapp/target/webapp.war /usr/local/tomcat/webapps
-
-#this is the Doockerfile we are using
+# copying the the petshop application file from the source directory to destincation HTTPD Container directory
+COPY ./project/ /usr/local/apache2/htdocs/
