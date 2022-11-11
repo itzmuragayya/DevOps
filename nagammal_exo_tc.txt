@@ -1,0 +1,47 @@
+
+[1] Flash Build
+[2] Provision Device
+[3]  > adb reboot bootloader
+     > fastboot flashing unlock
+     > fastboot erase userdata
+     > fastboot erase teedata
+     > fastboot erase misc
+     > fastboot erase metadata
+     > fastboot flash vbmeta vbmeta_disable_verity_S.img
+     > fastboot reboot 
+     > adb root 
+     > adb remount
+     > adb shell setenforce 0
+     > adb shell setprop OMX.Intel.debug 1
+____________________________________________________________________________________
+
+Extra::::
+[5] Push lib files in /lib & lib64
+
+###########################################################################################################################################
+
+run ats -m GtsExoPlayerTestCases -t com.google.android.exoplayer.gts.DashStreamingTest#widevine23FpsH264FixedV23
+run ats -m GtsExoPlayerTestCases -t com.google.android.exoplayer.gts.DashStreamingTest#widevineH264AdaptiveV18
+run ats -m GtsExoPlayerTestCases -t com.google.android.exoplayer.gts.DashStreamingTest#widevineH265AdaptiveV24
+run ats -m GtsExoPlayerTestCases -t com.google.android.exoplayer.gts.DashStreamingTest#widevine29FpsH264FixedV23
+run ats -m GtsExoPlayerTestCases -t com.google.android.exoplayer.gts.DashStreamingTest#widevineH265FixedV23
+run ats -m GtsExoPlayerTestCases -t com.google.android.exoplayer.gts.DashStreamingTest#widevineH264FixedV18
+run ats -m GtsExoPlayerTestCases -t com.google.android.exoplayer.gts.DashStreamingTest#cbcsSchemeTypeV25
+run ats -m GtsExoPlayerTestCases -t com.google.android.exoplayer.gts.DashStreamingTest#widevineH264AdaptiveWithRendererDisablingV18
+
+#############################################################################################################################################
+
+
+run ats -m GtsMediaTestCases -t com.google.android.media.gts.MediaDrmParameterizedTests#testKcbOemCryptoVersion[L1]
+run ats -m GtsMediaTestCases -t com.google.android.media.gts.WidevineDashPolicyTests#testL1RenewalSingleKey
+run ats -m GtsMediaTestCases -t com.google.android.media.gts.WidevineDashPolicyTests#testL1EntitlementLicenseWithKeyRotation
+run ats -m GtsMediaTestCases -t testL1EntitlementLicense(com.google.android.media.gts.WidevineDashPolicyTests
+
+
+run ats -m GtsMediaTestCases -t com.google.android.media.gts.MediaDrmTests#testWidevineBasicOperation	
+
+
+
+
+
+
