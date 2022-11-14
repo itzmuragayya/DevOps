@@ -45,6 +45,5 @@ to push the changes to remote server
 to pull the changes to remote server 
 - git pull
 
-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
 
 
