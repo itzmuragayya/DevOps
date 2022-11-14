@@ -1,0 +1,5 @@
+Setup Jenkins Master system
+Setup slave system
+Connect both Master & slave through Node in Jenkins UI
+Setup tomcat server system
+Connect Slave & application server through deploy over 
