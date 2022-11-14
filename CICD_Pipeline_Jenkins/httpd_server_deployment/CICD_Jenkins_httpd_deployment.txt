@@ -1,0 +1,5 @@
+1. Setup Jenkins Master system
+2. Setup slave system
+3. Connect both Master & slave through Node in Jenkins UI
+4. Setup httpd system
+5. Connect Slave & application server through ssh over plugin
