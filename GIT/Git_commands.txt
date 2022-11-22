@@ -2,7 +2,7 @@ To change as root user
 - sudu su  
 
 To Update the amazon linux machine 
-- yum update
+- yum update s
 
 
 To install git on amazon linux
